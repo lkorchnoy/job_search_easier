@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-    before_action :require_login, except: [:create]
+    before_action :require_login, except: [:create, :home]
 
     def index 
         @users = User.all
