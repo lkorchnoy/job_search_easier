@@ -24,12 +24,12 @@ end
 end
 end
 
-# root 'users#home'
+root 'api/v1/users#home'
 
-# get '/auth/github/callback', to: "sessions#github_create"
-# get "/signup", to: "users#new"
-# get "/login", to: "sessions#new"
-# post "/login", to: "sessions#create"
-# post "/logout", to: "sessions#destroy"
+get '/auth/github/callback', to: "api/v1/sessions#github_create"
+get "/signup", to: "api/v1/users#new"
+get "/login", to: "api/v1/sessions#new"
+post "/login", to: "api/v1/sessions#create"
+post "/logout", to: "api/v1/sessions#destroy"
 
 end
